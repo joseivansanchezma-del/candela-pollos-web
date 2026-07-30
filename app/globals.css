@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 60% 98%;
+    --foreground: 20 14% 8%;
+    --border: 20 10% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 8%;
+    --muted: 20 10% 95%;
+    --muted-foreground: 20 8% 40%;
+  }
+
+  .dark {
+    --background: 20 20% 6%;
+    --foreground: 40 20% 96%;
+    --border: 20 10% 18%;
+    --card: 20 16% 10%;
+    --card-foreground: 40 20% 96%;
+    --muted: 20 12% 14%;
+    --muted-foreground: 20 8% 65%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+::selection {
+  background-color: #ff6b35;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d62828, #ff6b35);
+  border-radius: 9999px;
+}
+
+/* WCAG 2.2 AA: respeta la preferencia de reducir movimiento como red de
+   seguridad adicional a los guards de JS (useReducedMotion). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
