@@ -110,7 +110,7 @@ export const menuItems: MenuItem[] = [
   {
     id: "combo-alitas-personal",
     name: "Combo Alitas Personal",
-    description: "6 alitas + papas a la francesa + gaseosa personal.",
+    description: "6 alitas + papas en fosforo + gaseosa personal.",
     price: 27900,
     image: "/images/menu-alitas.jpg",
     category: "combos",
@@ -162,19 +162,11 @@ export const menuItems: MenuItem[] = [
 
   // Acompanamientos a la carta
   {
-    id: "papas-francesa",
-    name: "Papas a la francesa",
-    description: "Crocantes, fritas al momento y con sal justa.",
+    id: "papas-fosforo",
+    name: "Papas en fosforo",
+    description: "Papa fresca pelada y cortada en fosforo, fritas al momento y con sal justa.",
     price: 8000,
     image: "/images/menu-papas-francesa.jpg",
-    category: "acompanantes",
-  },
-  {
-    id: "papa-criolla",
-    name: "Papa criolla",
-    description: "Papa criolla fresca, frita hasta quedar dorada por fuera y suave por dentro.",
-    price: 9000,
-    image: "/images/menu-papa-criolla.jpg",
     category: "acompanantes",
   },
   {
@@ -186,19 +178,11 @@ export const menuItems: MenuItem[] = [
     category: "acompanantes",
   },
   {
-    id: "patacon",
-    name: "Patacon",
-    description: "2 unidades de platano verde, doble friccion, crocantes.",
+    id: "ensalada",
+    name: "Ensalada",
+    description: "Repollo y zanahoria fresca rallados, cremosa, estilo clasico de pollo asado.",
     price: 7000,
-    image: "/images/menu-patacon.jpg",
-    category: "acompanantes",
-  },
-  {
-    id: "ensalada-fresca",
-    name: "Ensalada fresca",
-    description: "Lechuga, tomate y cebolla morada con un toque de limon.",
-    price: 7000,
-    image: "/images/menu-papas.jpg",
+    image: "/images/menu-ensalada.jpg",
     category: "acompanantes",
   },
   {
@@ -217,13 +201,22 @@ export const menuItems: MenuItem[] = [
     image: "/images/menu-yuca-frita.jpg",
     category: "acompanantes",
   },
+  {
+    id: "platano-maduro",
+    name: "Platano maduro cocido",
+    description: "Platano maduro cocido, dulce y suave, el acompanante clasico del pollo asado.",
+    price: 6000,
+    image: "/images/menu-platano-maduro.jpg",
+    category: "acompanantes",
+    tag: "nuevo",
+  },
 
   // Bebidas
   {
     id: "gaseosa-personal",
     name: "Gaseosa personal 400ml",
     description: "Bien fria, para acompanar tu combo.",
-    price: 5000,
+    price: 4000,
     image: "/images/menu-bebida.jpg",
     category: "bebidas",
   },
@@ -231,7 +224,7 @@ export const menuItems: MenuItem[] = [
     id: "gaseosa-familiar-15",
     name: "Gaseosa familiar 1.5L",
     description: "Para compartir en familia.",
-    price: 12000,
+    price: 9000,
     image: "/images/menu-bebida.jpg",
     category: "bebidas",
   },
@@ -239,7 +232,7 @@ export const menuItems: MenuItem[] = [
     id: "gaseosa-familiar-3l",
     name: "Gaseosa familiar 3L",
     description: "Ideal para reuniones y combos grandes.",
-    price: 18000,
+    price: 14000,
     image: "/images/menu-bebida.jpg",
     category: "bebidas",
   },
