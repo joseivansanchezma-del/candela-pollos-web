@@ -149,7 +149,7 @@ export function ChickenScene({
         <EmberBed />
         <RotatingRig progress={progress} />
 
-        <EffectComposer disableNormalPass>
+        <EffectComposer>
           <Bloom
             intensity={0.65}
             luminanceThreshold={0.32}
